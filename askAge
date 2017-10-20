@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace testing
+{
+    class Person
+    {
+
+        public int askName()
+        {
+            Console.WriteLine("\n How old are you?");
+            string input = Console.ReadLine();
+
+            int numberinput = Convert.ToInt32(input);
+            return numberinput;
+        }
+        static void Main(string[] args)
+        {
+
+            Person one = new Person();
+
+            int returned = one.askName();
+            
+            if (returned<0)
+            {
+                Console.WriteLine("Wrong input, please try again");
+                 returned = one.askName(); }
+
+            else {
+                if (returned <= 25)
+                {
+                    Console.WriteLine("Aaah....still young and beautifull");
+                }
+
+                else if (returned>25 && returned <= 60)
+                {
+                    Console.WriteLine("The beauty of the life is blooming right in front of you");
+                }
+
+                else if (returned > 60)
+                {
+                    Console.WriteLine("Enjoy the autumn of life");
+                }
+            }
+
+            Console.ReadKey();
+
+
+        }
+    }
+}
