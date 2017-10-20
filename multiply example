@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace testing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Input the first number to multiply:");
+            string first = Console.ReadLine();
+            Console.WriteLine("Input the second number to multiply:");
+            string second = Console.ReadLine();
+            Console.WriteLine("Input the third number to multiply:");
+            string third = Console.ReadLine();
+
+            int one = Convert.ToInt32(first);
+            int two = Convert.ToInt32(second);
+            int three = Convert.ToInt32(third);
+
+            int result = one * two * tri;
+            Console.WriteLine($"{one} * {two} * {three} = {result}");
+            Console.ReadKey();
+
+        }
+    }
+}
