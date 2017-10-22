@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace testing
+{
+    class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+
+            string normal = "The sun will never shine the same as today";
+
+            Console.WriteLine("The string before reversion\n\n " +normal + "\n");
+            Console.WriteLine("The string after reversion\n");
+
+            List<string> words = new List<string>();
+
+            words = normal.Split(' ').ToList();
+
+            for( int i=words.Count; i > 0; i--)
+            {
+                Console.Write(words[i-1]+ " ");
+            }
+
+
+
+            Console.ReadKey();
+
+
+        }
+    }
+}
